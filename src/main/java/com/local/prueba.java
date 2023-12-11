@@ -2,7 +2,7 @@ package com.local;
 
 import java.util.Scanner;
 
-public class Punto3 {
+public class prueba {
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
         boolean sistema = true;
@@ -29,7 +29,7 @@ public class Punto3 {
                         if(opc >= 0 && opc <= 1){
                             simbolo = (opc == 1);
                             for (int i = 0; i < clave.length; i++) {
-                                int rand =  (int) (Math.random() * 3);
+                                int rand =  (int) (Math.random() * 2);
                                 if(rand == 0 && simbolo){
                                     char[] simbolos = {33, 64, 35, 36, 37, 94, 38, 42};
                                     rand =  (int) (Math.random() * simbolos.length);
@@ -42,7 +42,7 @@ public class Punto3 {
                                     clave[i] = numero;
                                     continue;
                                 }
-                                if(rand == 2 && mayus){
+                                if(mayus){
                                     rand =  (int) (Math.random() * 26);
                                     char letra = (char) (65 + rand);
                                     clave[i] = letra;
