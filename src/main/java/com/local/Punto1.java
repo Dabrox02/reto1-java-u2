@@ -16,8 +16,10 @@ public class Punto1 {
             }
             int suma = 0;
             for (int i = 0; i < n; i++) {
-                if(i % 3 == 0 || i % 5 == 0){
-                    suma += i;
+                if(!(i % 3 == 0 && i % 5 == 0)){
+                    if(i % 3 == 0 || i % 5 == 0){
+                        suma += i;
+                    }
                 }
             }
             System.out.println("La suma de los numeros entre 0 - " + n + " es " + suma);
